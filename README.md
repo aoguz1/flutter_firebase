@@ -1,6 +1,6 @@
 # firebase_flutter
 
-A new Flutter project.
+Şu an e-mail, google signIn ve Twitter SignIn bulunmakta
 
 ## Getting Started
 
