@@ -85,14 +85,14 @@ class _GirisViewState extends State<GirisView> {
                   heroTag: "twitter",
                   backgroundColor: Colors.blue,
                   onPressed: () async {
-                    var twitterData =
+                  /*   var twitterData =
                         await SignInHelper.instance().twitterSignIn();
                     if (twitterData != null) {
                       var userData =
                           await SignInHelper.instance().twitterFirebaseSignIn();
                       debugPrint("Kullanıcının adı : " + userData.displayName);
                       Navigator.push(context, MaterialPageRoute(builder: (context)=>AnasayfaView(userData.email, userData.displayName ,userData.photoUrl, userData.uid)));
-                    }
+                    } */
                   },
                   child: Icon(
                     FontAwesome.twitter,

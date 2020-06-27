@@ -1,4 +1,5 @@
 import 'package:firebase_flutter/view/authantice/giris.dart';
+import 'package:firebase_flutter/view/rooter.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
-        body: GirisView(),
+        body: RooterView(),
       ),
     );
   }

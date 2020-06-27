@@ -5,8 +5,6 @@ import 'package:firebase_flutter/keys/twitterkey.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:flutter_twitter/flutter_twitter.dart';
-
 
 class SignInHelper {
   static SignInHelper _googleSignInHelper = SignInHelper._private();
@@ -62,7 +60,7 @@ class SignInHelper {
     return user;
   }
 
-  twitterSignIn() async {
+  /*  twitterSignIn() async {
     var twitterLoginKeys = TwitterLogin(
         consumerKey: TwitterKey.twitterKey,
         consumerSecret: TwitterKey.twittersecretKey);
@@ -80,13 +78,13 @@ class SignInHelper {
     } else {
       debugPrint("Hata çıktı");
     }
-  }
+  } */
 
-  Future<FirebaseUser> twitterFirebaseSignIn() async {
+  /* Future<FirebaseUser> twitterFirebaseSignIn() async {
     var twitterUser =await twitterSignIn(); // signIn olmuş kullanıcıyı burada alıyoruz.
     var twitterFireUser = (await _auth.signInWithCredential(twitterUser))
         .user; //kullanıcı verileri ile firebase'e giriş yaptığımız yer
 
     return twitterFireUser;
-  }
+  } */
 }
