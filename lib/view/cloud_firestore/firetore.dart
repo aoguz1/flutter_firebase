@@ -221,7 +221,8 @@ class _FirestoreViewState extends State<FirestoreView> {
         .child("abdullah")
         .child("abdullah.png"); // firebase üzerinde kayıt olcağı yolu veriyoruz.
     StorageUploadTask uploadfile = referance.putFile(secilenresim);  // upload işlemi 
-    var url = await (await uploadfile.onComplete).ref.getDownloadURL();
+    var url = await (await uploadfile.onComplete).ref.getDownloadURL(); // upload işlemi tamamlandıktan sonra url verilmesi
+    
     debugPrint("indirme linki : " + url);
   }
 
